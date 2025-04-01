@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛓️ JSONator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>JSONator</h1>
+    
+    <div class="instructions">
+        <p><strong>Instructions:</strong> Paste your tab-separated spreadsheet data below. Use <code>,,</code> (double comma) if you can't type tabs.</p>
+        <p>Example:</p>
+        <pre>Name        Age     Country
+John        25      USA
+Alice       30      Canada</pre>
+    </div>
+    
+    <div>
+        <label for="spreadsheet-data">Spreadsheet Data:</label>
+        <textarea id="spreadsheet-data" placeholder="Paste tab-separated data (or use ,,)..."></textarea>
+        
+        <div class="options">
+            <label>
+                <input type="checkbox" id="replace-commas" checked>
+                Replace <code>,,</code> with tabs
+            </label>
+        </div>
+        
+        <label for="json-output">JSON Output:</label>
+        <textarea id="json-output" readonly></textarea>
+        
+        <button id="copy-btn">Copy JSON to Clipboard</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
